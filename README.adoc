@@ -1,0 +1,5 @@
+﻿== *Terraform sample project for AWS Route53*
+
+=== 1. Root Domain Hosted Zone
+
+=== 2. Sub Domain Hosted Zone
