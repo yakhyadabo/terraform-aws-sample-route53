@@ -1,6 +1,6 @@
 data "aws_route53_zone" "root_domain" {
   name         = var.root_domain
-  private_zone = false
+  private_zone = var.private
 }
 
 /*
@@ -28,3 +28,5 @@ resource "aws_route53_record" "ns_record" {
   ttl     = "86400"
   records = each.value.name_servers
 }
+
+# See : https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-routing-traffic-for-subdomains.html

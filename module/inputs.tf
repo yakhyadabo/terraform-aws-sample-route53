@@ -18,6 +18,11 @@ variable "root_domain" {
   EOT
 }
 
+variable "private" {
+  type = bool
+  default = false
+}
+
 variable "validation_method" {
   description = <<EOT
   Validation Method
