@@ -14,7 +14,7 @@ locals {
 
 module "route53" {
   for_each = local.domains
-  source               = "../module"
+  source               = "../../module"
   region               = var.region
   project_name         = var.project.name
   environment          = var.project.environment
